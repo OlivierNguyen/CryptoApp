@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Alerts(models.Model):
+    price = models.IntegerField(max_length=30)
+    operatir = models.
+    created_at = models.DateField(auto_now_add=True)
