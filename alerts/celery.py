@@ -27,6 +27,7 @@ def debug_task(self):
 def setup_periodic_tasks(**kwargs):
     app.add_periodic_task(10.0, periodically_check_bitcoin_price.s(), name='check BTC every 10sec')
 
+# FIXME https://stackoverflow.com/questions/41119053/connect-new-celery-periodic-task-in-django/46965132#46965132
 @app.task
 def periodically_check_bitcoin_price():
     from .tasks import periodically_check_bitcoin_price
