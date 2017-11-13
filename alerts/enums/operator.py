@@ -1,8 +1,8 @@
-EQ = 'EQ',
-LT = 'LT',
-LTE = 'LTE',
-GT = 'GT',
-GTE = 'GTE',
+EQ = 'EQ'
+LT = 'LT'
+LTE = 'LTE'
+GT = 'GT'
+GTE = 'GTE'
 
 OPERATOR = (
     (EQ, 'Equals'),
