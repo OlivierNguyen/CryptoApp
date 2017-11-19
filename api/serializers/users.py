@@ -27,3 +27,13 @@ class UserSerializer(serializers.ModelSerializer):
         instance.set_password(validated_data.get('password', instance.password))
         instance.save()
         return instance
+
+
+class LoginSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = (
+            'username',
+            'password',
+        )
